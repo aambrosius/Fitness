@@ -39,17 +39,19 @@
 </div>
 
 <div class="row">
-    <select>
-        @foreach (var lift in (string[]) ViewBag.lift) {
-            <option value=@lift>@lift</option>
-        }
-    </select>
+    <button>Click me</button>
+    <div id="myModal" class="modal">
 
-    @foreach (var log in (IEnumerable<WorkoutLogInfo>) ViewBag.log) {
-        <h3>@log.Date.ToString("MM/dd/yyyy")</h3>
-        <h4>@log.Strength</h4>
-        <p>@log.Title</p>
-    }
-    }
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+
+    <button id="show">Show Dialog</button>
+
     <p>@DateTime.Now</p>
 </div>
+

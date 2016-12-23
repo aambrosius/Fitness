@@ -11,9 +11,9 @@ namespace Fitness.Controllers
     {
         public ActionResult Index() {
             //var log  = new List<WorkoutLogInfo>();
-            ViewBag.log = DataRetrieval.LoadLog();
-            ViewBag.lift = StrengthInfo.GetLifts();
-            ViewBag.metcon = MetconInfo.GetMetcons();
+            //ViewBag.log = DataRetrieval.LoadLog();
+            //ViewBag.lift = StrengthInfo.GetLifts();
+            //ViewBag.metcon = MetconInfo.GetMetcons();
             //workoutLog.Add(Convert.ToDateTime("12/16/2016"), "BackSquat", "Fran");
             return View();
         }
